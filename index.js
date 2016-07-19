@@ -4,12 +4,14 @@ var path = require('path');
 var app = express();
 
 var mongoose = require('mongoose');
-var Airplane = require('./models/airplane');
 mongoose.connect('mongodb://localhost/airplanes');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(require('morgan')('dev'));
 
 app.use('/api/airplanes', require('./controllers/airplane'));
 
-app.listen(3000);
+var server = app.listen(process.env.PORT || 3000);
+
+module.exports = server;
