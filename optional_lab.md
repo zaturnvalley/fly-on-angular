@@ -21,3 +21,9 @@ Using the Airplanes API starter, create an Angular CRUD app that does the follow
   * Forms (search bar, new airplane)
 * Make it look good (CSS)
 * Work incrementally and save work frequently (via git)
+
+##Bonuses
+
+* Instead of displaying every airplane, add pagination to the application
+  * This will involve accessing `req.query` and limit/offset
+  * This *may* involve altering the search bar
