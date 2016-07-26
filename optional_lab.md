@@ -1,6 +1,6 @@
 #Combining Angular and Express
 
-Using the Airplanes API starter that we set up in class, create an Angular CRUD app that does the following.
+Using the Airplanes API starter, create an Angular CRUD app that does the following.
 
 ##Requirements
 
