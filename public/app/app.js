@@ -12,9 +12,10 @@ angular.module('AirplaneApp', ['ui.router', 'AirplanesCtrls'])
     url: '/404',
     templateUrl: 'app/views/404.html'
   })
-  .state('', {
-    url: '',
-    templateUrl: 'app/views/show.html'
+  .state('show', {
+    url: '/planes/:id',
+    templateUrl: 'app/views/show.html',
+    controller: 'PlanesShowCtrl'
   });
 
   $locationProvider.html5Mode(true);
