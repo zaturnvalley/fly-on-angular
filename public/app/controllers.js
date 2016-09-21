@@ -6,6 +6,8 @@ angular.module('AirplanesCtrls', [])
     url: '/api/airplanes',
     method: 'GET'
   }).then(function success(res) {
-    $scope.airplanes = res.data
-  })
+    $scope.airplanes = res.data;
+  }, function error(res) {
+    console.log(res);
+  });
 }]);
