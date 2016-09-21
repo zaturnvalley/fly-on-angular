@@ -1,4 +1,4 @@
 <h1>Airplanes App</h1>
-<div class="well" ng-repeat="airplane in airplanes track by $index">
-  <a ng-href="{{airplane._id}}"><h3>{{airplane.model}}</h3></a> - <small>{{airplane.manufacturer}}</small>
+<div ui-sref="airplaneShow({id: airplane._id})" class="well" ng-repeat="airplane in airplanes track by $index">
+  <h3>{{airplane.model}}</h3> - <small>{{airplane.manufacturer}}</small>
 </div>
