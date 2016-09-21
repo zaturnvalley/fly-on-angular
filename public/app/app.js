@@ -8,14 +8,14 @@ angular.module('AirplaneApp', ['ui.router', 'AirplanesCtrls'])
     templateUrl: 'app/views/airplanes.html',
     controller: 'AirplanesCtrl'
   })
+  .state('airplaneShow', {
+    url: '/airplane/:id',
+    templateUrl: 'app/views/airplaneShow.html',
+    controller: 'AirplaneShowCtrl'
+  })
   .state('404', {
     url: '/404',
     templateUrl: 'app/views/404.html'
-  })
-  .state('show', {
-    url: '/planes/:id',
-    templateUrl: 'app/views/show.html',
-    controller: 'PlanesShowCtrl'
   });
 
   $locationProvider.html5Mode(true);
